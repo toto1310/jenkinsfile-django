@@ -1,0 +1,7 @@
+{
+    "python.venvPath": ".venv",
+    "python.linting.enabled": true,
+    "python.linting.pylintEnabled": false,
+    "python.linting.pep8Enabled": true,
+    "python.pythonPath": "${workspaceFolder}/.venv/bin/python"
+}
