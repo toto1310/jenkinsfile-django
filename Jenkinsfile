@@ -1,13 +1,10 @@
 pipeline {
     agent {
         docker {
-            image 'python:3-alpine'
+            image 'python:3.6-alpine'
+            args '-u root:root'
         }
     }
-    // environment {
-        // workDir = 'example/maven'
-    // }
-
     stages {
         stage('checkout') {
             steps {
