@@ -127,4 +127,5 @@ NOSE_ARGS = [
     '--with-xunit',
     '--with-coverage',
     '--cover-xml',
+    '--cover-package=mysite,polls',
 ]
