@@ -17,5 +17,5 @@ django = "==2.1.2"
 python_version = "3.6"
 
 [scripts]
-lint = "flake8 --format=pylint ./mysite ./polls"
+lint = "flake8 --format=pylint --exit-zero ./mysite ./polls"
 tests = "python manage.py test"
