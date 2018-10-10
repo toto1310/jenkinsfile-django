@@ -1,21 +1,21 @@
 [[source]]
-
 url = "https://pypi.python.org/simple"
 verify_ssl = true
 name = "pypi"
 
-
 [dev-packages]
-
 "pep8" = "*"
 "autopep8" = "*"
-
+"flake8" = "*"
+coverage = "*"
+django-nose = "*"
 
 [packages]
-
 django = "==2.1.2"
 
-
 [requires]
-
 python_version = "3.6"
+
+[scripts]
+lint = "flake8 --format=pylint ./mysite ./polls"
+tests = "python manage.py test"
